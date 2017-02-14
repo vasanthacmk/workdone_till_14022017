@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kisaan Sale product</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+ <!-- <link rel="stylesheet" href="app.css">-->
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- external files that are used-->
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_2.css">
+  <link href="css/animate.css" rel="stylesheet">
+
+</head>
+<body ng-app="myApp">
+
+<div id="wrapper">
+
+<!-- Header part --->
+  <div class="header topstyle" sty1le="width: auto;">
+    <div class="container">
+      <a  href=""><img src="img/logo.png"></a>  <!--class="brand"-->
+      <h1 class="headstyle"> <a  class="astyle1" href="">KISAAN SALE PRODUCT </a></h1>  <!-- id="item_name" -->
+    </div>
+  </div>
+
+  <!-- Content  part --->
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">SURESH KAVILI</strong>
+                             </span> <span class="text-muted text-xs block">Technical Director <b class="caret"></b></span> </span> </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="mailbox.html">Mailbox</a></li>
+              <li class="divider"></li>
+              <li><a href="login.html">Logout</a></li>
+            </ul>
+          </div>
+          <div class="logo-element">
+            IN+
+          </div>
+        </li>
+        <li class="active"  >  <!--ng-controller="myCtrl" -->
+
+          <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow" ></span></a>
+         <!-- <form ng-show="showform" > -->
+          <ul class="nav nav-second-level" ><!--onclick="divHide()" -->
+
+            <li class="active"><a href="index.html">Dashboard v.1</a></li>
+            <li><a href="">Dashboard v.2</a></li>   <!--dashboard_2.html-->
+            <li><a href="">Dashboard v.3</a></li> <!--dashboard_3.html-->
+            <li><a href="">Dashboard v.4</a></li> <!--dashboard_4_1.html-->
+            <li><a href="">Dashboard v.5 </a></li> <!--dashboard_5.html-->
+
+          </ul>
+          </form>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a><!--layouts.html-->
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="">Flot Charts</a></li> <!--graph_flot.html-->
+            <li><a href="">Morris.js Charts</a></li> <!--graph_morris.html-->
+            <li><a href="">Rickshaw Charts</a></li> <!--graph_rickshaw.html-->
+            <li><a href="">Chart.js</a></li> <!--graph_chartjs.html-->
+            <li><a href="">Chartist</a></li> <!--graph_chartist.html-->
+            <li><a href="">c3 charts</a></li> <!--c3.html-->
+            <li><a href="">Peity Charts</a></li> <!--graph_peity.html-->
+            <li><a href="">Sparkline Charts</a></li> <!--graph_sparkline.html-->
+          </ul>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+          <ul class="nav nav-second-level collapse"> <!--mailbox.html -->
+            <li><a href="">Inbox</a></li>  <!--mailbox.html -->
+            <li><a href="">Email view</a></li> <!--mail_detail.html-->
+            <li><a href="">Compose email</a></li> <!--mail_compose.html-->
+            <li><a href="">Email templates</a></li> <!-- email_template.html-->
+          </ul>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>  </a> <!--metrics.html-->
+        </li>
+        <li>
+          <a href=""><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a> <!--widgets.html-->
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="">Basic form</a></li> <!--form_basic.html-->
+            <li><a href="">Advanced Plugins</a></li> <!--form_advanced.html-->
+            <li><a href="">Wizard</a></li> <!--form_wizard.html-->
+            <li><a href="">File Upload</a></li> <!--form_file_upload.html-->
+            <li><a href="">Text Editor</a></li> <!--form_editors.html-->
+            <li><a href="">Autocomplete</a></li> <!--form_autocomplete.html-->
+            <li><a href="">Markdown</a></li> <!--form_markdown.html-->
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="">Contacts</a></li> <!-- contacts.html-->
+            <li><a href="">Profile</a></li> <!-- profile.html -->
+            <li><a href="">Profile v.2</a></li> <!-- profile_2.html-->
+            <li><a href="">Contacts v.2</a></li> <!-- contacts_2.html-->
+            <li><a href="">Projects</a></li> <!-- projects.html -->
+            <li><a href="">Project detail</a></li> <!--project_detail.html -->
+            <li><a href="">Activity stream</a></li> <!-- activity_stream.html-->
+            <li><a href="">Teams board</a></li> <!-- teams_board.html-->
+            <li><a href="">Social feed</a></li> <!-- social_feed.html -->
+            <li><a href="">Clients</a></li> <!-- clients.html -->
+            <li><a href="">Outlook view</a></li> <!-- full_height.html -->
+            <li><a href="">Vote list</a></li> <!-- vote_list.html -->
+            <li><a href="">File manager</a></li> <!-- file_manager.html -->
+            <li><a href="">Calendar</a></li> <!-- calendar.html -->
+            <li><a href="">Issue tracker</a></li> <!-- issue_tracker.html -->
+            <li><a href="">Blog</a></li> <!-- blog.html -->
+            <li><a href="">Article</a></li> <!-- article.html -->
+            <li><a href="">FAQ</a></li> <!-- faq.html -->
+            <li><a href="">Timeline</a></li> <!-- timeline.html -->
+            <li><a href="">Pin board</a></li> <!-- pin_board.html -->
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="search_results.html">Search results</a></li>
+            <li><a href="lockscreen.html">Lockscreen</a></li>
+            <li><a href="invoice.html">Invoice</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="login_two_columns.html">Login v.2</a></li>
+            <li><a href="forgot_password.html">Forget password</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="404.html">404 Page</a></li>
+            <li><a href="500.html">500 Page</a></li>
+            <li><a href="empty_page.html">Empty page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="toastr_notifications.html">Notification</a></li>
+            <li><a href="nestable_list.html">Nestable list</a></li>
+            <li><a href="agile_board.html">Agile board</a></li>
+            <li><a href="timeline_2.html">Timeline v.2</a></li>
+            <li><a href="diff.html">Diff</a></li>
+            <li><a href="pdf_viewer.html">PDF viewer</a></li>
+            <li><a href="i18support.html">i18 support</a></li>
+            <li><a href="sweetalert.html">Sweet alert</a></li>
+            <li><a href="idle_timer.html">Idle timer</a></li>
+            <li><a href="truncate.html">Truncate</a></li>
+            <li><a href="password_meter.html">Password meter</a></li>
+            <li><a href="spinners.html">Spinners</a></li>
+            <li><a href="spinners_usage.html">Spinners usage</a></li>
+            <li><a href="tinycon.html">Live favicon</a></li>
+            <li><a href="google_maps.html">Google maps</a></li>
+            <li><a href="datamaps.html">Datamaps</a></li>
+            <li><a href="social_buttons.html">Social buttons</a></li>
+            <li><a href="code_editor.html">Code editor</a></li>
+            <li><a href="modal_window.html">Modal window</a></li>
+            <li><a href="clipboard.html">Clipboard</a></li>
+            <li><a href="text_spinners.html">Text spinners</a></li>
+            <li><a href="forum_main.html">Forum view</a></li>
+            <li><a href="validation.html">Validation</a></li>
+            <li><a href="tree_view.html">Tree view</a></li>
+            <li><a href="loading_buttons.html">Loading buttons</a></li>
+            <li><a href="chat_view.html">Chat view</a></li>
+            <li><a href="masonry.html">Masonry</a></li>
+            <li><a href="tour.html">Tour</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="icons.html">Icons</a></li>
+            <li><a href="draggable_panels.html">Draggable Panels</a></li> <li><a href="resizeable_panels.html">Resizeable Panels</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="tabs_panels.html">Panels</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="notifications.html">Notifications & Tooltips</a></li>
+            <li><a href="helper_classes.html">Helper css classes</a></li>
+            <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="table_basic.html">Static Tables</a></li>
+            <li><a href="table_data_tables.html">Data Tables</a></li>
+            <li><a href="table_foo_table.html">Foo Tables</a></li>
+            <li><a href="jq_grid.html">jqGrid</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="ecommerce_products_grid.html">Products grid</a></li>
+            <li><a href="ecommerce_product_list.html">Products list</a></li>
+            <li><a href="ecommerce_product.html">Product edit</a></li>
+            <li><a href="ecommerce_product_detail.html">Product detail</a></li>
+            <li><a href="ecommerce-cart.html">Cart</a></li>
+            <li><a href="ecommerce-orders.html">Orders</a></li>
+            <li><a href="ecommerce_payments.html">Credit Card form</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
+            <li><a href="slick_carousel.html">Slick Carousel</a></li>
+            <li><a href="carousel.html">Bootstrap Carousel</a></li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse">
+            <li>
+              <a href="#" id="damian">Third Level <span class="fa arrow"></span></a>
+              <ul class="nav nav-third-level">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+
+              </ul>
+            </li>
+            <li><a href="#">Second Level Item</a></li>
+            <li>
+              <a href="#">Second Level Item</a></li>
+            <li>
+              <a href="#">Second Level Item</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
+        </li>
+        <li class="landing_link">
+          <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning pull-right">NEW</span></a>
+        </li>
+        <li class="special_link">
+          <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+          <form role="search" class="navbar-form-custom" action="search_results.html">
+            <div class="form-group">
+              <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+            </div>
+          </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li>
+            <span class="m-r-sm text-muted welcome-message">Welcome to Kesaan Sale Product.</span>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+              <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+            </a>
+            <ul class="dropdown-menu dropdown-messages">
+              <li>
+                <div class="dropdown-messages-box">
+                  <a href="profile.html" class="pull-left">
+                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                  </a>
+                  <div class="media-body">
+                    <small class="pull-right">46h ago</small>
+                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                  </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="dropdown-messages-box">
+                  <a href="profile.html" class="pull-left">
+                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                  </a>
+                  <div class="media-body ">
+                    <small class="pull-right text-navy">5h ago</small>
+                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                  </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="dropdown-messages-box">
+                  <a href="profile.html" class="pull-left">
+                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                  </a>
+                  <div class="media-body ">
+                    <small class="pull-right">23h ago</small>
+                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                  </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block">
+                  <a href="mailbox.html">
+                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+              <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts">
+              <li>
+                <a href="mailbox.html">
+                  <div>
+                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                    <span class="pull-right text-muted small">4 minutes ago</span>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="profile.html">
+                  <div>
+                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                    <span class="pull-right text-muted small">12 minutes ago</span>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                    <span class="pull-right text-muted small">4 minutes ago</span>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block">
+                  <a href="notifications.html">
+                    <strong>See All Alerts</strong>
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+
+          <li>
+            <a href="login.html">
+              <i class="fa fa-sign-out"></i> Log out
+            </a>
+          </li>
+          <li>
+            <a class="right-sidebar-toggle">
+              <i class="fa fa-tasks"></i>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+
+<!-- footer with the text-->
+    <div class="footer">
+      <div class="pull-right">
+
+          <div class="pull-right">
+              <!--facebook, tweeter,.....-->
+              <a class="fontcolor" href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+              <a class="fontcolor" href="https://www.pinterest.com/pinterest/"><i class="fa fa-pinterest-p"></i></a> <!--in href="#" -->
+              <a class="fontcolor" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+              <a class="fontcolor" href="https://www.flickr.com/"><i class="fa fa-flickr"></i></a>
+              <a class="fontcolor" href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          </div>
+
+
+       <!--   10GB of <strong>250GB</strong> Free. -->
+
+
+
+      </div>
+      <div>
+        <strong>Copyright</strong> MAVEN SOFT &copy; 2017
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+</div>
+  <div ng-view></div>
+
+
+  <!-- externl files that are used -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  <!--   <script src="app/Angularjs_files/angularjs_code.js"></script>-->
+<!--<script>
+var app = angular.module("myApp",[]);
+app.controller("myCtrl",function($scope){
+/*$scope.showformform=true; */
+
+$scope.divHide=function(){
+    $scope.showform=false;
+
+  /*if($scope.showform==true)
+{$scope.showform=false;}
+
+else {$scope.hideform=true;} */
+}
+});
+</script>-->
+
+
+</body>
+</html>

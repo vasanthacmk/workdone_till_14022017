@@ -1,0 +1,29 @@
+
+.headstyle{
+
+   /* background-color : #ff7998;*/
+        text-align:center ;
+
+
+}
+
+.topstyle{
+ //height:60px;
+    background-color:#ff7998;
+
+}
+.astyle1 {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: honeydew;
+    text-decoration-color: green;
+    font-style: oblique ;
+
+}
+
+.fontcolor{
+
+   background-color: #000000;
+    font-size: medium;
+    padding : 5px;
+    color: white;
+}
